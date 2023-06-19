@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+section{
+    height: 100vh;
+    background-color: #FF917A;
+    font-family: 'Poppins', sans-serif;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #FF7659;
+    padding: 15px 0px;
+}
+.score h2 {
+    font-size: 30px;
+}
+.score p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:#243330;
+    background-color: rgba(255, 255, 255, .7);
+}
+.card h2 {
+    font-size: 30px;
+}
+.card p {
+    font-size: 25px;
+    text-align: center;
+}
+.card h1 {
+    font-size: 45px;
+}
+.main-score{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.card button,
+.match button{
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    border: 0;
+    background-color: rgb(45, 117, 90);
+    color: #fff;
+    cursor: pointer;
+}
+.card button:hover{
+    border: 2px solid rgb(45, 117, 90);
+    background-color: #fff;
+    color: #000;
+}
+.buttons {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.winner {
+    text-align: center;
+    color: #fff;
+    font-size: 46px;
+}
+.hands,
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+.player-hand {
+    transform: rotateY(180deg);
+}
+.FadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+.FadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
