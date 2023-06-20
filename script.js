@@ -8,11 +8,20 @@ const game = () => {
         const playerHand = document.querySelector(".player-hand")
         const computerHand = document.querySelector(".computer-hand")
 
+        
 
-
-        const computerOptions = ["Daş" , "Kağız" , "Qayçı"]
+        // const computerOptions = ["Daş" , "Kağız" , "Qayçı"]
         options.forEach(option => {
             option.addEventListener("click" , function(){
+                if(this.textContent === "Daş"){
+                    var computerOptions = ["Kağız" , "Qayçı", "Daş", "Kağız", "Qayçı", "Kağız", "Kağız"]
+                }
+                if(this.textContent === "Qayçı"){
+                    var computerOptions = ["Daş" , "Daş" , "Qayçı", "Kağız","Daş","Daş","Kağız"]
+                }
+                if(this.textContent === "Kağız"){
+                    var computerOptions = ["Qayçı" , "Kağız", "Daş", "Qayçı","Qayçı","Qayçı","Daş"]
+                }
                 const computerNumber = Math.floor(Math.random() * computerOptions.length)
                 const computerChoice = computerOptions[computerNumber]
                 
