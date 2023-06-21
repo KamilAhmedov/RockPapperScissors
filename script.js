@@ -145,7 +145,7 @@ const game = () => {
         computerScore = 0;
         updateScore();
     })
-    Restart.addEventListener("click" , function(){
+        Restart.addEventListener("click" , function(){
         const finish = document.querySelector(".card")
         const score = document.querySelector(".score")
         const match = document.querySelector(".match")
@@ -169,7 +169,15 @@ const game = () => {
         updateMainScore();
     })
     }
+    if (playerMainScore === null) {
+        playerMainScore = 0;
+        localStorage.setItem("playerMainScore", playerMainScore);
+      }
     
+      if (computerMainScore === null) {
+        computerMainScore = 0;
+        localStorage.setItem("computerMainScore", computerMainScore);
+      }
     ContinueRestart();
     playMatch();
 }
